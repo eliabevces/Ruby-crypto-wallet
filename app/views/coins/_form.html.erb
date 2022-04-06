@@ -13,22 +13,22 @@
 
   <div class="mb-3">
     <%= form.label :description, class: "form-label" %>
-    <%= form.text_field :description, class: "form-control", placeholder: "Bitcoin" %>
+    <%= form.text_field :description, class: "form-control", placeholder: "Bitcoin", :required => true %>
   </div>
 
   <div class="mb-3">
     <%= form.label :acronym, class: "form-label"  %>
-    <%= form.text_field :acronym, class: "form-control", placeholder: "BTC"  %>
+    <%= form.text_field :acronym, class: "form-control", placeholder: "BTC", :required => true  %>
   </div>
 
   <div class="mb-3">
     <%= form.label :url_image, class: "form-label"  %>
-    <%= form.text_field :url_image, class: "form-control", placeholder: "www.google.com"  %>
+    <%= form.text_field :url_image, class: "form-control", placeholder: "www.google.com", :required => true  %>
   </div>
   
   <div class="mb-3">
     <%= form.label :mining_type%>
-    <%= form.select("mining_type_id", @miningTypeOptions, class: "form-select")%>
+    <%= form.select("mining_type_id", @miningTypeOptions,{include_blank: ""}, class: "form-select", :required => true)%>
 
   </div>
 

@@ -13,12 +13,12 @@
 
   <div class="mb-3">
     <%= form.label :description, class: "form-label"  %>
-    <%= form.text_field :description, class: "form-control", placeholder: "Proof of Work" %>
+    <%= form.text_field :description, class: "form-control", placeholder: "Proof of Work", :required => true %>
   </div>
 
   <div class="mb-3">
     <%= form.label :acronym, class: "form-label"  %>
-    <%= form.text_field :acronym, class: "form-control", placeholder: "PoW" %>
+    <%= form.text_field :acronym, class: "form-control", placeholder: "PoW", :required => true %>
   </div>
 
   <div class="actions">
